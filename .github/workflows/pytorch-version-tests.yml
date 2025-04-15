@@ -1,10 +1,11 @@
 name: PyTorch version tests
 
-on: [push, pull_request, workflow_dispatch]
-  # https://docs.github.com/en/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions#onschedule
-  # schedule:
-  #   # Run at 00:00 UTC Every Day
-  #   - cron: "0 0 * * *"
+on:
+  push:
+    branches:
+      - feature/replace_conda_with_uv_in_pytorch_version_tests
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
