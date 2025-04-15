@@ -3,7 +3,7 @@ name: PyTorch version tests
 on:
   push:
     branches:
-      - feature/*
+      - feature/replace_conda_with_uv_in_pytorch_version_tests
 
 jobs:
   build:
