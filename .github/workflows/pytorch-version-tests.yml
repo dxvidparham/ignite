@@ -2,8 +2,8 @@ name: PyTorch version tests
 
 on:
   push:
-    branches:
-      - feature/replace_conda_with_uv_in_pytorch_version_tests
+    paths:
+      - ".github/workflows/pytorch-version-tests.yml"
 
 jobs:
   build:
